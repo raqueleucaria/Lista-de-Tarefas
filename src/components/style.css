@@ -1,0 +1,15 @@
+.removeButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 65px;
+    outline: none;
+    border: 1px solid #3a8622;
+    background-color: #4fbd2e;
+    border-radius: 4px;
+    font-size: 24px;
+    text-align: center;
+    transition: all center;
+    transition: all ease 200ms;
+}
