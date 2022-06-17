@@ -35,28 +35,28 @@ function TodoForm(props) {
         <>
         <input 
             type="text" 
-            placeholder="Update your item" 
+            placeholder="Edite sua tarefa" 
             value={input} 
             name='text' 
             className="todo-input-edit"
             onChange={handChange}
             ref={inputRef}
         />
-        <button className="todo-button-edit">Update</button>
+        <button className="todo-button-edit">Atualizar</button>
         </>
         ) : 
         (
         <>
         <input 
           type="text" 
-          placeholder="Add a todo" 
+          placeholder="Adicione uma tarefa" 
           value={input} 
           name='text' 
           className="todo-input"
           onChange={handChange}
           ref={inputRef}
       />
-      <button className="todo-button">Add todo</button>
+      <button className="todo-button">Adicionar</button>
       </>
       ) 
     }
