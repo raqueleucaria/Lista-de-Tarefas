@@ -1,6 +1,7 @@
-import React, {useState} from 'react'
-import TodoForm from './TodoForm'
+import React, {useState} from 'react';
+import TodoForm from './TodoForm';
 import Todo from './Todo';
+import './style.css';
 
 function TodoList() {
 
@@ -46,7 +47,7 @@ function TodoList() {
 
   return (
     <div>
-        <h2> Quais são os planos para hoje?</h2>
+        <h1>Lista de Tarefas</h1>
         <TodoForm onSubmit={addTodo}/>
         <Todo todos={todos} completeTodo={completeTodo} 
             removeTodo={removeTodo} updateTodo={updateTodo}/>

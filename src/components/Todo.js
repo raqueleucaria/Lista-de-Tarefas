@@ -32,11 +32,11 @@ function Todo({todos, completeTodo, removeTodo, updateTodo}) {
             </div>
             <div className='icons'>
                 <FaRegTrashAlt
-                    className='removeButton' 
+                    className='delete-icon' 
                     onClick={() => removeTodo(todo.id)}
                 />
                 <FaRegEdit
-                    className='editButton' 
+                    className='edit-icon ' 
                     onClick={() => setEdit({id: todo.id, value: todo.text})}
                 />
 

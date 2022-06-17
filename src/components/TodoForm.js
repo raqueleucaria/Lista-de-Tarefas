@@ -38,11 +38,11 @@ function TodoForm(props) {
             placeholder="Edite sua tarefa" 
             value={input} 
             name='text' 
-            className="todo-input-edit"
+            className="todo-input edit"
             onChange={handChange}
             ref={inputRef}
         />
-        <button className="todo-button-edit">Atualizar</button>
+        <button className="todo-button edit">Atualizar</button>
         </>
         ) : 
         (
