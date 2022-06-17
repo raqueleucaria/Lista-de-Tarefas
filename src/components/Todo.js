@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import TodoForm from './TodoForm';
-
+import { FaRegTrashAlt } from 'react-icons/fa';
+import { FaRegEdit } from 'react-icons/fa';
 
 
 function Todo({todos, completeTodo, removeTodo, updateTodo}) {
@@ -30,12 +31,14 @@ function Todo({todos, completeTodo, removeTodo, updateTodo}) {
                 {todo.text}
             </div>
             <div className='icons'>
-                <button className='removeButton' onClick={() => removeTodo(todo.id)}>x</button>
-                <button 
+                <FaRegTrashAlt
+                    className='removeButton' 
+                    onClick={() => removeTodo(todo.id)}
+                />
+                <FaRegEdit
                     className='editButton' 
                     onClick={() => setEdit({id: todo.id, value: todo.text})}
-                >**
-                </button>
+                />
 
             </div>
         </div> 
